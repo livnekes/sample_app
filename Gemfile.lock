@@ -29,6 +29,8 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.4.3)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (3.1.2.20141016)
+      execjs
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.2.2)
@@ -168,7 +170,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
+  autoprefixer-rails
+  bootstrap-sass (~> 3.2.0)
   byebug
   coffee-rails
   guard-minitest (= 2.3.1)
@@ -178,7 +181,7 @@ DEPENDENCIES
   minitest-reporters (= 1.0.5)
   rails (= 4.1.6)
   rails-html-sanitizer
-  sass-rails
+  sass-rails (>= 3.2)
   sdoc (= 0.4.0)
   spring
   sqlite3
