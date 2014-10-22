@@ -2,14 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.6'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails'
-  #gem 'coffee-rails', '~> 3.2.1'
   gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -19,22 +16,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bootstrap-sass'
 
 # To use Jbuilder templates for JSON
 gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
-
 gem 'turbolinks'
 gem 'rails-html-sanitizer'
 gem 'sdoc', '0.4.0', group: :doc
