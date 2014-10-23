@@ -10,6 +10,9 @@ SampleApp::Application.routes.draw do
   get 'signup'  => 'users#new', :as => 'signup'
   get 'login'  =>  'users#create', :as => 'login'
 
+  get 'product/:id' => 'products#show'
+  get 'products'    => 'products#all'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

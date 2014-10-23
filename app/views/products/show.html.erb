@@ -1,0 +1,11 @@
+<% unless @product.nil?%>
+  <p>
+    <b>Product:</b>
+    <%= @product.name %>
+  </p>
+  <%= image_tag("#{@product.url}", :alt => "#{@product.name}", :width => 300, :height => 300, :title => "#{@product.description}") %>
+<% else %>
+  <p>
+    <b>Please Add Products</b>
+  </p>
+<% end %>

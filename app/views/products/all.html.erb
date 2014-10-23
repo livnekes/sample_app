@@ -1,0 +1,8 @@
+<% @products.each do |product| %>
+  <p>
+    <b>Product:</b>
+    <%= product.name %>
+  </p>
+  <%= link_to(image_tag("#{product.url}", :alt => "#{product.name}", :width => 100, :height => 100, :title => "#{product.description}"), "/product/#{product.id}") %>
+  <br/>
+<% end %>
