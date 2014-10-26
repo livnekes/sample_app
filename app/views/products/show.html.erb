@@ -4,6 +4,13 @@
     <%= @product.name %>
   </p>
   <%= image_tag("#{@product.url}", :alt => "#{@product.name}", :width => 300, :height => 300, :title => "#{@product.description}") %>
+  <div class="yotpo yotpo-main-widget"
+    data-product-id="SKU<%= @product.id %>"
+    data-name="<%= @product.name %>"
+    data-url="/product/<%= @product.id %>"
+    data-image-url="<%= @product.url %>"
+    data-description="<%= @product.description %>">
+  </div>
 <% else %>
   <p>
     <b>Please Add Products</b>

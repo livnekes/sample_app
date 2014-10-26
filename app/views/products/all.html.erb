@@ -4,5 +4,16 @@
     <%= product.name %>
   </p>
   <%= link_to(image_tag("#{product.url}", :alt => "#{product.name}", :width => 100, :height => 100, :title => "#{product.description}"), "/product/#{product.id}") %>
+  <div class="yotpo bottomLine"
+    data-appkey="hxIWuX8DE7NP4nVBytcGAhFPgZexr59o3dgNVYC1"
+    data-domain="127.0.0.1"
+    data-product-models="information"
+    data-product-id="SKU<%= product.id %>"
+    data-name="<%= product.name %>"
+    data-url="/product/<%= product.id %>"
+    data-image-url="<%= product.url %>"
+    data-description="<%= product.description %>"
+    data-bread-crumbs="mammals">
+  </div>
   <br/>
 <% end %>
