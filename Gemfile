@@ -19,6 +19,7 @@ gem 'jbuilder'
 gem 'turbolinks'
 gem 'rails-html-sanitizer'
 gem 'sdoc', '0.4.0', group: :doc
+gem "resque", "<= 1.5"
 
 group :development, :test do
     gem 'sqlite3'
