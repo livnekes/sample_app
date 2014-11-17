@@ -24,8 +24,13 @@ gem "resque", "<= 1.5"
 group :development, :test do
     gem 'sqlite3'
     gem 'byebug'
-    gem 'web-console'
     gem 'spring'
+end
+
+group :development do
+    gem 'web-console', '2.0.0.beta3'
+    gem 'quiet_assets', group: :development
+    gem "better_errors"
 end
 
 group :test do
