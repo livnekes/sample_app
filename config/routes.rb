@@ -7,7 +7,7 @@ SampleApp::Application.routes.draw do
   get 'static_pages/contact', :as => 'contact'
   get 'signup'  => 'users#new', :as => 'signup'
 
-  get 'product/:id' => 'products#show'
+  get 'products/:id' => 'products#show'
   get 'products'    => 'products#all'
 
   get    'login'   => 'sessions#new'
