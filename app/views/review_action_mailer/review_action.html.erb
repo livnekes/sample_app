@@ -1,0 +1,46 @@
+<html>
+<body>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "EmailMessage",
+  "action": {
+    "@type": "ReviewAction",
+    "review": {
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "FoodEstablishment",
+        "name": "Joe's Diner"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    "handler": {
+      "@type": "HttpActionHandler",
+      "url": "MY REVIEW URL",
+      "requiredProperty": {
+        "@type": "Property",
+        "name": "review.reviewRating.ratingValue"
+      },
+      "method": "http://schema.org/HttpRequestMethod/POST"
+    }
+  },
+  "description": "We hope you enjoyed your meal at Joe's Diner. Please rate your experience."
+}
+</script>
+<p>
+  Dear John, thanks for booking your Google I/O ticket with us.
+</p>
+<p>
+  BOOKING DETAILS<br/>
+  Order for: John Smith<br/>
+  Event: Google I/O 2013<br/>
+  When: May 15th 2013 8:30am PST<br/>
+  Venue: Moscone Center, 800 Howard St., San Francisco, CA 94103<br/>
+  Reservation number: IO12345<br/>
+</p>
+</body>
+</html>
