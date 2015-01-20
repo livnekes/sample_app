@@ -1,6 +1,6 @@
 class ReviewActionMailer < ActionMailer::Base
-  default from: "from@example.com"
-  def review_action
-    mail :to => "livne@yotpo.com"
+  default from: "livnek@gmail.com"
+  def review_action(to)
+    mail :to => to
   end
 end
