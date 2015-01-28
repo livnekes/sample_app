@@ -5,6 +5,7 @@ SampleApp::Application.routes.draw do
   get 'static_pages/help', :as => 'help'
   get 'static_pages/about', :as => 'about'
   get 'static_pages/contact', :as => 'contact'
+  get 'static_pages/staples', :as => 'staples'
   get 'signup'  => 'users#new', :as => 'signup'
 
   get 'products/:id' => 'products#show'
