@@ -11,4 +11,6 @@ class StaticPagesController < ApplicationController
   def staples
   end
 
+  def canvas
+  end
 end
