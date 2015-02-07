@@ -28,6 +28,7 @@ group :development, :test do
 end
 
 group :development do
+    gem 'brakeman'
     gem 'web-console', '2.0.0.beta3'
     gem 'quiet_assets', group: :development
     gem "better_errors"
